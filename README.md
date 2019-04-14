@@ -4,7 +4,12 @@ Coding games to test and build your programming skills!
 ### Game list
 - Tetris
 - Snake
+- Simple piano
+- Imperial game
 - your next game here!
+
+### Programing lenguages
+- Javascript
 
 ### How to join us
 Simple bla bla ... [help](https://github.com/firstcontributions/first-contributions)
