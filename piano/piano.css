@@ -18,6 +18,9 @@ main{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
 }
+.key{
+    transition: all .4s;
+}
 .normal-key{
     border: .5px solid black;
     background-color: #ffffff;
@@ -31,6 +34,9 @@ main{
     border-left: .4px solid gold;
     border-right: .4px solid gold;
     border-bottom: .4px solid gold;
+}
+.keyPressed{
+    background-color: cadetblue;
 }
 #five{
     left: 69%;

@@ -6,11 +6,26 @@
 */
 window.addEventListener('load', ()=>{
     const allKeys = document.querySelectorAll('.keyboard > .key');
-    
-    allKeys.forEach((key, index)=>{
-        key.addEventListener('click', function(){
-            console.log(this.innerHTML);
-        });
+    this.addEventListener('keypress', function(e){
+        presionar(e.key.toLowerCase(), allKeys);
     });
-    console.log('Are you ready, Pino Man?');
 });
+function presionar(character, allKeys){
+    switch(character){
+        case 'q':
+        case 'w':
+        case 'e':
+        case 'r':
+        case 't':
+        case 'y':
+        case 'u':
+        case 'o':
+        case 'p':
+        playSound(character, allKeys);
+        break;
+    }
+}
+
+function playSound(e, allKeys){
+    console.log(allKeys);
+}
