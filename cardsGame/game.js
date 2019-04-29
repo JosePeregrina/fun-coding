@@ -18,3 +18,6 @@
     -The slave defeat the Emperator.
 
 */
+window.addEventListener('load', ()=>{
+    
+});
