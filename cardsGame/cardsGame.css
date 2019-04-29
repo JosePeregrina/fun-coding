@@ -3,3 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+main{
+    width: 100%;
+    padding: 25px;
+    border: 2px solid firebrick;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+}
+section{
+    padding: 1px;
+    border: 2px solid royalblue;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}

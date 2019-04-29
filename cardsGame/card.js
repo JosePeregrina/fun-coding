@@ -1,18 +1,17 @@
 'use strict'
-console.log('Card active...')
 class Card{
-    constructor(type='farmer'){
-        switch(type.toLowerCase()){
-            case 'emperator':
-            case 'slave':
-            case 'farmer':
-            this._type = type;
-            break;
-            default:
-            this._type = false;
-        }
+    constructor(type){
+        this._type = type;
+        let body = document.createElement('div');
+        let text = document.createTextNode(this._type);
+        body.appendChild(text);
+        this._format = body;
     }
     getType(){
         return this._type;
     }
+    getFormat(){
+        return this._format;
+    }
+    
 }

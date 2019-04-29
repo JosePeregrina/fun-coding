@@ -19,5 +19,24 @@
 
 */
 window.addEventListener('load', ()=>{
-    
+    const field_player = document.querySelector('#computer');
+    const field_computer = document.querySelector('#player');
+    let emperatorDeck = new Array();
+    let slaveDeck = new Array();
+    for(let i = 0; i < 5; i++){
+        if(i == 4){
+            emperatorDeck.push(creatCard('emperator'));
+            slaveDeck.push(creatCard('slave'));
+        }else{
+        emperatorDeck.push(creatCard());
+        slaveDeck.push(creatCard());
+        }
+    }
+     for(let i in emperatorDeck && slaveDeck){
+        field_player.appendChild(emperatorDeck[i].getFormat());
+        field_computer.appendChild(slaveDeck[i].getFormat());
+     }
 });
+function creatCard(type = 'farmer'){
+    return new Card(type);
+}
