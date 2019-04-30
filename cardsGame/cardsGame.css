@@ -5,15 +5,27 @@
 }
 main{
     width: 100%;
-    padding: 25px;
+    padding: 15px;
     border: 2px solid firebrick;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
+    /*grid-row-gap: 210px;*/
 }
 section{
     padding: 1px;
+    width: 55%;
+    margin: 1px auto;
     border: 2px solid royalblue;
     display: grid;
     grid-template-columns: repeat(5,1fr);
+    grid-column-gap: 10px;
+}
+.card{
+    border: 2px solid black;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }

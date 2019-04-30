@@ -3,8 +3,10 @@ class Card{
     constructor(type){
         this._type = type;
         let body = document.createElement('div');
-        let text = document.createTextNode(this._type);
-        body.appendChild(text);
+        let title = document.createElement('h5');
+        title.innerHTML = `${this._type}`;
+        body.appendChild(title);
+        body.classList.add('card');
         this._format = body;
     }
     getType(){
